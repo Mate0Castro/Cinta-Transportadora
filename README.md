@@ -1,4 +1,5 @@
 LOLkfhdasfer9f
 lsdñfhsdífhs
 sadjfkladjsfi´j
-![lol](https://github.com/user-attachments/assets/5f540cc6-7157-4136-a7df-bd129157a2a9)
+![Captura](https://github.com/user-attachments/assets/ef027bf5-a588-47d1-bbe7-f4fcbe9b1c06)
+
