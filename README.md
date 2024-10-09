@@ -1,2 +1,8 @@
 # Cinta-Transportadora
-Nosotros vamos  a hacer una cinta transportadora que vaya clasificando objetos según su altura y con unos servomotores los vaya moviendo a distintas cajas. Además que a esos objetos los vaya contando en un web server que vamos a hacer con la comunicación de MQTT de Node Red.
+Vamos a diseñar una cinta transportadora que clasifique objetos según su altura. Utilizaremos servomotores para mover los objetos a distintas cajas de acuerdo con su tamaño. Además, implementaremos un servidor web que registrará la cantidad de objetos clasificados, utilizando comunicación MQTT a través de Node-RED.
+
+#INDICE
+##Iniciación de nuestro proyecto
+###Explicación de la tecnología que usamos
+####Fotos de lo que vamos haciendo 
+#####Fuentes 
