@@ -1,3 +1,2 @@
 Lo primero q hicimos fue sacar de thingverse una cinta transpotadora la cual encontramos y modificamos en tinkerverse y esto nos quedó:
-
-![lol](https://github.com/user-attachments/assets/9717fffa-ad05-4a39-9af5-799ca8834523)
+![Captura](https://github.com/user-attachments/assets/6ecd6526-0fea-456f-954f-8023860793f9)
