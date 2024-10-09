@@ -4,4 +4,8 @@ Nuestro objetivo cómo proyecto es que podamos transportar 2 distintos tipos de 
 
 Tenemos tres instancias, primero el modelado 3D y el esquemático del circuito en kicad, segundo preparación de la comunicación (I2C, SPI, MQTT con Node-Red) y por último el armado de la transportadora y su prueba final de funcionamiento.  
 
- 
+# Iniciación de nuestro proyecto
+## Explicación de la tecnología que usamos
+### Fotos de lo que vamos haciendo 
+#### Fuentes 
+
