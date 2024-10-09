@@ -7,6 +7,15 @@ Tenemos tres instancias, primero el modelado 3D y el esquemático del circuito e
 # INDICE
 # Iniciación de nuestro proyecto
 # Explicación de la tecnología que usamos
-# Fotos de lo que vamos haciendo 
+2 Motores paso a paso
+1 Esp 32
+2 Fotoresistencias
+2 Láser
+1 Pulsador
+2 Servomotores
+2 Driver A4988
+Comunicación Node-Red
+# Fotos de nuestro proceso
+Lo primero que hicimos fue ingresar a Thingiverse para buscar diseños de cintas transportadoras y encontramos este: https://www.thingiverse.com/thing:3036233. Modificamos este diseño en Tinkercad, reduciendo sus dimensiones para que no fueran tan grandes. También hicimos lo mismo con los rodillos y los soportes.
 # Fuentes 
 
