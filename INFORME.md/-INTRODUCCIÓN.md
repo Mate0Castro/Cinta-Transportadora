@@ -1,7 +1,7 @@
 # INTRODUCCIÓN
-Hoy vamos a empezar un proyecto bastante interesante: queremos construir una cinta transportadora que clasifique objetos por su altura. La idea es que, con unos servomotores, podamos mover esos objetos a diferentes cajas de forma automática.
+Hoy vamos a empezar un proyecto bastante interesante: queremos construir una cinta transportadora que cuente y te muestre los objetos en un web server. La idea es que, con unos servomotores, podamos mover esos objetos.
 
-Además, queremos llevarlo un paso más allá y crear un servidor web que, gracias a MQTT y Node-RED, nos permita contar cuántos objetos estamos clasificando en tiempo real. La verdad es que estamos muy emocionados por ver cómo se desarrolla todo esto y lo que podemos lograr.
+Además, queremos llevarlo un paso más allá y crear un servidor web que, gracias a MQTT y Node-RED, nos permita contar cuántos objetos estamos clasificando en tiempo real.
 
 # ÍNDICE
 ## - Iniciación de nuestro proyecto
