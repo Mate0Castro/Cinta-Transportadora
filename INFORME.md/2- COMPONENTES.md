@@ -6,3 +6,4 @@
 ## 1 Pulsador
 ## 2 Servomotores
 ## 2 Driver A4988
+## 2 Capacitores
