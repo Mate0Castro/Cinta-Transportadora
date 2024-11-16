@@ -25,11 +25,6 @@ Un botón que permite iniciar o detener un proceso al ser presionado. Es una for
 
 ![image](https://github.com/user-attachments/assets/02ef4fe1-829f-4297-89ed-c118e38bed82)
 
-## 2 Servomotores
-Motores que permiten un control preciso de la posición angular. Se utilizan en robótica y proyectos que requieren movimientos específicos.
-
-![image](https://github.com/user-attachments/assets/16b0e0c0-d71d-4135-a03a-4e271330a7d2)
-
 ## 2 Driver A4988
 Un controlador de motor paso a paso que permite controlar la dirección y la velocidad de los motores. Ideal para manejar motores con precisión.
 
