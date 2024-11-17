@@ -13,3 +13,6 @@ Fotos del diseño 3D
 Kicad
 [esp32.zip](https://github.com/user-attachments/files/17396885/esp32.zip)
 
+DATASHEET
+
+
