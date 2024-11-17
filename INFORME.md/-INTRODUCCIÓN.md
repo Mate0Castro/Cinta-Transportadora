@@ -6,5 +6,4 @@ Además, queremos llevarlo un paso más allá y crear un servidor web que, graci
 # ÍNDICE
 ## - Iniciación de nuestro proyecto
 ## - Explicación de la tecnología que usamos
-## - Fotos de nuestro proceso 
 ## - Fuentes 
