@@ -1,5 +1,5 @@
 # Diagrama de FLUX
-
+```mermaid
 flowchart TD
     A[Inicio] --> B[Inicializar NVS]
     B --> C[Iniciar WiFi]
@@ -37,3 +37,4 @@ flowchart TD
         U --> V[Esperar 10s]
         V --> J
     end
+```
