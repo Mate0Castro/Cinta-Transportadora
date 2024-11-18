@@ -1,4 +1,6 @@
 # Diagrama de FLUX
+
+
 flowchart TD
     A[Inicio] --> B[Inicializar NVS]
     B --> C[Iniciar WiFi]
