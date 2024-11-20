@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
-#include <freertos/queue.h>
 #include <esp_wifi.h>
 #include <nvs_flash.h>
 #include <mqtt_client.h>
@@ -157,8 +156,11 @@ void iniciarWiFi() {
 }
 
 void iniciarMQTT() {
+    // Configuración MQTT (sin los campos 'uri' ni 'event_handle')
     esp_mqtt_client_config_t mqtt_cfg = {
-        .uri = BROKER_URI,
+        .broker.address.uri = BROKER_URI,  // Cambiado de 'uri' a 'broker.address.uri'
     };
+
+    // Inicializamos el cliente MQTT
     mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
 }
