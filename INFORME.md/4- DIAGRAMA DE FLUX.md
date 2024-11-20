@@ -1,4 +1,4 @@
-# Diagrama de FLUX
+# Diagrama de FLUJO
 ```mermaid
 flowchart TD
     A[Inicio] --> B[Inicializar NVS]
