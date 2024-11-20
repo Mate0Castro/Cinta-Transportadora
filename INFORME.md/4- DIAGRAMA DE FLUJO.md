@@ -1,26 +1,40 @@
 # Diagrama de FLUJO
 ```mermaid
 flowchart TD
-    A[Inicio] --> B[Configurar GPIO]
-    B --> C[Iniciar MQTT]
-    C --> D[Crear Tarea Cinta Transportadora]
-    D --> E{Bucle Principal}
+    A[Inicio] --> B[Inicializar NVS]
     
-    E --> F[Mover Motores\n200 pasos]
-    F --> G[Leer Sensores\nAltura1 y Altura2]
+    B --> C{Verificar estado NVS}
+    C -->|Sin espacio/Nueva versión| D[Borrar NVS]
+    C -->|Normal| E[Continuar]
     
-    G --> H{Altura > Umbral\n15cm?}
-    H -->|Sí| I[Incrementar\nContador Alta]
-    H -->|No| J[Incrementar\nContador Baja]
+    D --> E[Inicializar NVS]
     
-    I --> K[Enviar datos MQTT:\n- Contador Alta\n- Contador Baja]
-    J --> K
+    E --> F[Inicializar WiFi]
+    F --> G[Configurar GPIOs]
     
-    K --> L[Esperar 2 segundos]
-    L --> E
+    G --> H[Configurar:
+    - Pines de entrada
+    - ADC
+    - Interrupciones]
     
-    %% Subproceso MQTT
-    M[Event Handler MQTT] --> N{Tipo de Evento}
-    N -->|Conectado| O[Mostrar mensaje\nConectado]
-    N -->|Desconectado| P[Mostrar mensaje\nDesconectado]
+    H --> I[Iniciar Servicio de Interrupciones]
+    I --> J[Añadir Manejador\nInterrupción Emergencia]
+    
+    J --> K[Encender Láseres]
+    K --> L[Inicializar MQTT]
+    
+    L --> M[Crear Tarea de Motores]
+    M --> N[Crear Tarea de Sensores]
+    
+    N --> O[Publicar Estado\n'running']
+    
+    %% Subproceso de Interrupción de Emergencia
+    P[Interrupción de Emergencia] --> Q{Estado del Sistema}
+    Q -->|Funcionando| R[Detener Motores]
+    Q -->|Detenido| S[Reiniciar Sistema]
+    
+    %% Subproceso de Tareas
+    T[Tarea de Motores] --> U[Controlar\nMotores Paso a Paso]
+    V[Tarea de Sensores] --> W[Leer Sensores\nde Altura]
+    W --> X[Enviar Datos\npor MQTT]
 ```
