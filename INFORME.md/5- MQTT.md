@@ -6,7 +6,6 @@ MQTT se ejecuta sobre TCP/IP utilizando una topología PUSH/SUBSCRIBE. En la arq
 MQTT es un protocolo controlado por eventos, donde no hay transmisión de datos periódica o continua. Así se mantiene el volumen de transmisión al mínimo. Un cliente sólo publica cuando hay información para enviar, y un bróker sólo envía información a los suscriptores cuando llegan nuevos datos.
 
 Arquitectura de los mensajes:
-
 QoS 0: ofrece la cantidad mínima de transmisión de datos. Con este nivel, cada mensaje se entrega a un suscriptor una vez, sin confirmación, por lo que no hay forma de saber si los suscriptores recibieron el mensaje. Este método a veces se denomina “lanzar y olvidar” o “una entrega como máximo”. Debido a que este nivel asume que la entrega está completa, los mensajes no se almacenan para entregarlos a los clientes desconectados que luego se vuelven a conectar.
 
 ![image](https://github.com/user-attachments/assets/f2a9b622-0bb0-4c30-b239-507222b99958)
