@@ -34,6 +34,7 @@ flowchart TD
 
     subgraph "Task MQTT"
         J --> U[Iniciar Cliente MQTT]
+        S --> U[Iniciar Bróker MQTT]
         U --> V[Esperar 10s]
         V --> J
     end
